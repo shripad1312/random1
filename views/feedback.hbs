@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            feedback
+        </title>
+    </head>
+    <body>
+      
+         <div>
+               <form action="/feedback" method="post" >
+             Email:<input name="email" type="email" placeholder="email"><br>
+              <textarea name="feedback" placeholder="feedback" cols="30" rows="10"></textarea><br>
+              <button type="submit">save</button>
+            </form>
+        </div>
+   
+
+    <hr>
+    {{!-- <a href="feedback1/{{this.id}}">see comments</a> --}}
+    {{!-- <div>
+        {{#each don}}
+        <p>{{this.feedback}}</p><br>
+        {{/each}}
+    </div> --}}
+    <hr>
+    </body>
+</html>

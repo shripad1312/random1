@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>
+            seefull
+        </title>
+        <script >
+           
+       
+
+          </script>
+    </head>
+    <body>
+        <form action="/seefull" method="get">
+        {{#each show}}
+        <div>
+            <h1>{{this.id}}</h1>
+        <h1>{{this.title}}</h1>
+        <p>{{this.blog}}</p>
+        </div>
+        {{/each}}
+<hr>
+{{sanam}}
+<br>
+</form>
+        {{!-- <a href="/feedback/{{this.id}}">see comments</a>  --}}
+        <hr>
+      
+        <br>
+{{!-- <a href="/feedback/{{this.id}}">add comment{{this.title}}</a><br> --}}
+          <div>
+               <form action="/seefull"   method="post" >
+               <div>
+                
+             <input  name="eid" type="hidden" value="{{sanam}}" ><br>
+           
+              <textarea name="feedback" placeholder="feedback" cols="10" rows="20"  ></textarea><br>
+              <button type="submit">save</button>
+              
+              </div>
+             
+            </form>
+        </div> 
+      
+    </body>
+</html>

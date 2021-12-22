@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            home
+        </title>
+    </head>
+    <body>
+        <a href="http://localhost:1000/blogus/">blogus</a>
+        
+        <hr>
+
+       {{#each show}}
+        <div>
+           <h1>  {{this.title}}</h1> 
+           <p>  {{this.blog}}</p> 
+          <a href="/seefull/{{this.id}}">seefull blog{{this.title}}</a> <br>
+           <a href="/feedback/{{this.id}}">add comment{{this.title}}</a><br>
+             <a href="/feedback1/{{this.id}}">see comment{{this.title}}</a><br>
+             <br>
+          
+          <hr/>
+        </div>
+          {{/each}}
+    </body>
+</html>
